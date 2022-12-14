@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Space Kitchen Survey</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Space Kitchen Survey</h1>
+    <p id="description">Your feedback is important to us. Thank you for taking time to review our products.</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <!-- Contact Info -->
+      <fieldset>
+        <!-- Ask name -->
+        <label id="name-label" for="first-name">Name: 
+          <input id="name" name="first-name" type="text" placeholder="Name" required />
+        </label>
+        <!-- Ask email, validate -->
+        <label id="email-label" for="email">Email: 
+          <input id="email" name="email" type="email" placeholder="Email" required />
+        </label>
+        <!-- Ask for age -->
+        <label id="number-label" for="age">Age: 
+          <input id="number" type="number" name="age" placeholder="Age" min="13" max="120" required />
+        </label>
+      </fieldset>
+      <!-- Questions -->
+      <fieldset>
+        <!-- Ask what is being reviewed -->
+        <label>What product are you reviewing?
+          <select id="dropdown">
+            <option value=""></option>
+            <option value="1">Tomato Soup</option>
+            <option value="2">Chicken and Dumplings</option>
+            <option value="3">French Onion Soup</option>
+            <option value="4">Chicken Tortilla Soup</option>
+            <option value="5">Fettuccine Alfredo</option>
+          </select>
+        </label>
+        <!-- Ask feedback -->
+        <!-- Overall Satisfaction, radio buttons -->
+        <p>Overall, how satisfied were you with the product?</p>
+        <label for="satisfaction-excellent">
+          <input id="satisfaction-excellent" name="satisfaction" type="radio" value="5">Excellent
+        </label>
+        <label for="satisfaction-aboveAverage">
+          <input id="satisfaction-aboveAverage" name="satisfaction" type="radio" value="4">Above Average
+        </label>
+        <label for="satisfaction-average">
+          <input id="satisfaction-average" name="satisfaction" type="radio" value="3">Average
+        </label>
+        <label for="satisfaction-belowAverage">
+          <input id="satisfaction-belowAverage" name="satisfaction" type="radio" value="2">Below Average
+        </label>
+        <label for="satisfaction-horrible">
+          <input id="satisfaction-horrible" name="satisfaction" type="radio" value="1">Horrible
+        </label>
+        <!-- Attributes of product, checkboxes -->
+        <p>What did you like about your product?</p>
+        <label for="like-texture">
+          <input id="like-texture" type="checkbox" name="like-texture" value="like-texture">Texture
+        </label>
+        <label for="like-taste">
+          <input id="like-taste" type="checkbox" name="like-taste" value="like-taste">Taste
+        </label>
+        <label for="like-temperature">
+          <input id="like-temperature" type="checkbox" name="like-temperature" value="like-temperature">Temperature
+        </label>
+        <label for="like-ingredients">
+          <input id="like-ingredients" type="checkbox" name="like-ingredients" value="like-ingredients">Ingredients
+        </label>
+        <label for="like-broth-sauce">
+          <input id="like-broth-sauce" type="checkbox" name="like-broth-or-sauce" value="like-broth-sauce">Broth/sauce
+        </label>
+        <p>Were there any issues with your product?</p>
+        <label for="dislike-texture">
+          <input id="dislike-texture" type="checkbox" name="dislike-texture" value="dislike-texture">Texture was off
+        </label>
+        <label for="dislike-taste">
+          <input id="dislike-taste" type="checkbox" name="dislike-taste" value="dislike-taste">Taste was bad
+        </label>
+        <label for="dislike-temperature-cold">
+          <input id="dislike-temperature-cold" type="checkbox" name="dislike-temperature-cold" value="dislike-temperature-cold">Temperature was too cold
+        </label>
+        <label for="dislike-temperature-hot">
+          <input id="dislike-temperature-hot" type="checkbox" name="dislike-temperature-hot" value="dislike-temperature-hot">Temperature was too hot
+        </label>
+        <label for="wrong-ingredients">
+          <input id="wrong-ingredients" type="checkbox" name="wrong-ingredients" value="wrong-ingredients">Ingredients were wrong
+        </label>
+        <label for="too-many-ingredients">
+          <input id="too-many-ingredients" type="checkbox" name="too-many-ingredients" value="too-many-ingredients">Too many ingredients
+        </label>
+        <label for="not-enough-ingredients">
+          <input id="not-enough-ingredients" type="checkbox" name="not-enough-ingredients" value="not-enough-ingredients">Not enough ingredients
+        </label>
+        <label for="too-much-broth-sauce">
+          <input id="too-much-broth-sauce" type="checkbox" name="too-much-broth-sauce" value="too-much-broth-sauce">Too much broth/sauce
+        </label>
+        <label for="not-enough-broth-sauce">
+          <input id="not-enough-broth-sauce" type="checkbox" name="not-enough-broth-sauce" value="not-enough-broth-sauce">Not enough broth/sauce
+        </label>
+      </fieldset>
+      <fieldset>
+        <!-- Additional comments, textarea -->
+        <label for="feedback">Additional Feedback:
+          <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="Comments..."></textarea>
+        </label>
+      </fieldset>
+      <!-- Submit -->
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
